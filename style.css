@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.container{
+    height: 29rem;
+    width: 18rem;
+    position: fixed;
+    top: 8rem;
+    left: 33rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 21px;
+
+}
+
+h1{
+    font-size: 1.9rem;
+    margin-left: 1.5rem;
+}
+
+span{
+    position: relative;
+    left: 3rem;
+}
+
+.submit{
+    position: fixed;
+    top: 36.1rem;
+    left: 33.1rem;
+    height: 3rem;
+    width: 20rem;
+    border: none;
+    transition: transform 1s ease-in-out;
+    color: white;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, teal, navy);
+    border-radius: 0 0 19px 19px;
+    z-index: 1;
+}
+
+input{
+    position: fixed;
+    top: 16rem;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 2rem;
+    color: hotpink;
+}
+
+textarea{
+    position: fixed;
+    top: 20rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    border: 1.5px solid black;
+    color: hotpink;
+    font-size: 1.3rem;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.submit::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, navy, teal);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    border-radius: 0 0 19px 19px;
+}
+
+.submit:hover::before{
+    opacity: 1;
+}
+
